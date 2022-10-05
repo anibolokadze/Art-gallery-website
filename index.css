@@ -1,15 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap);
 
-:root{
-    --almost-black:var(#151515);
-    --white:var(#FFFFFF);
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-style: normal;
 }
 body{
     font-family: 'Outfit', sans-serif;
@@ -21,18 +17,16 @@ h1,h2, h3{
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 900;
 }
+p{
+    font-weight: 300;
+    font-size: 18px;
+    color: #444444;
+}
 
-/* header styles */
+/* index.html header styles */
 .header-text{
     display: grid;
     row-gap: 32px;
-}
-/* background image */
-header img:not(button img, .btn-wrapper img){
-    width: 100%;
-    padding-bottom: 32px;
-}
-.header-text{
     padding: 0 16px;
 }
 .header-text h1{
@@ -41,14 +35,18 @@ header img:not(button img, .btn-wrapper img){
     color: #151515;
 }
 .header-text p{
-    font-weight: 300;
-    font-size: 18px;
     line-height: 28px;
-    color: #444444;
     max-width: 550px;
 }
+/* background image */
+header img:not(button img, .btn-wrapper img){
+    width: 100%;
+    padding-bottom: 32px;
+}
 
-/* button */
+
+
+/* button for both pages */
 .btn{
     display: flex;
 }
@@ -72,8 +70,8 @@ header img:not(button img, .btn-wrapper img){
 }
 
 
-/* main container */
-main{
+/* index.html main container */
+.main-index{
     margin:120px 0 120px 0;
 }
 article{
@@ -84,18 +82,14 @@ article{
 article img{
     width: 100%;
 }
+article p{
+    line-height: 28px;
+    max-width: 550px;
+}
 article h3{
-
     font-size: 50px;
     line-height: 45px;
     color: #151515;
-}
-article p{
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 28px;
-    color: #444444;
-    max-width: 550px;
 }
 article section:nth-child(2) h3{
     margin-bottom: 21px;
@@ -114,38 +108,125 @@ article section:nth-child(5){
     margin-bottom: 24px;
 }
 .description p{
-    font-weight: 300;
-    font-size: 18px;
     line-height: 28px;
     color: #FFFFFF;
 
 }
 
-/* footer */
-footer{
+
+/* location.html page map image and button positioning */
+.map-container img{
+    width: 100%;
+    top: 0;
+
+}
+.location-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* location.html adress */
+.map-container{
+    background-color: #151515;
+    
+}
+.map-container section{
+    height: 493px;
+    color: white;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.map-container section h3{
+    font-size: 50px;
+    line-height: 45px;
+    padding-bottom: 48px;
+
+}
+.map-container h4{
+    font-size: 32px;
+    line-height: 32px;
+    color: #D5966C;
+
+}
+.location{
+    display: grid;
+    row-gap: 20px;
+    padding-top: 20px;
+}
+address p{
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+/* footer for both pages */
+
+/* general footer style */
+footer section{
+    display: grid;
+    row-gap: 38px;
+}
+
+/* footer specifications */
+.index-footer{
     height: 336px;
     background-color: #151515;
     display: flex;
     align-items: center;
     padding: 0 32px;
 }
-footer section{
-    display: grid;
-    row-gap: 38px;
+.location-footer{
+    height: 336px;
+    background-color: #D5966C;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
 }
-footer h2{
+
+
+.index-footer h2{
     width: 112.05px;
     color: white;
 }
-footer p{
-    font-weight: 300;
+.index-footer p{
     font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
 }
+
+.location-footer p{
+    color: #151515;
+}
+
+
+
+/* general icon styles */
 .social-media-icons{
     display: inline-flex;
 }
 .social-media-icons a{
     margin-right:20px;
 }
+
+
+.location-icons a path{
+    fill: black;
+}
+
+/* hovers for both pages */
+.index-footer a:hover path {
+    fill: #d5966c;
+}
+
+.location-icons a:hover path{
+    fill: white;
+}
+
