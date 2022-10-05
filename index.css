@@ -1,3 +1,151 @@
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap);
+
+:root{
+    --almost-black:var(#151515);
+    --white:var(#FFFFFF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: aquamarine;
+    font-family: 'Outfit', sans-serif;
+    background: #FCFAF9;
+}
+
+/* general styles */
+h1,h2, h3{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 900;
+}
+
+/* header styles */
+.header-text{
+    display: grid;
+    row-gap: 32px;
+}
+/* background image */
+header img:not(button img, .btn-wrapper img){
+    width: 100%;
+    padding-bottom: 32px;
+}
+.header-text{
+    padding: 0 16px;
+}
+.header-text h1{
+    font-size: 60px;
+    line-height: 55px;
+    color: #151515;
+}
+.header-text p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+    max-width: 550px;
+}
+
+/* button */
+.btn{
+    display: flex;
+}
+.title-btn{
+    width: 204px;
+    height: 72px;
+    border: none;
+    background: #151515;
+}
+.title-btn p{
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.icon-btn{
+    width: 56px;
+    height: 72px;
+    border: none;
+    background: #D5966C;
+}
+
+
+/* main container */
+main{
+    margin:120px 0 120px 0;
+}
+article{
+    padding: 0 16px;
+    display: grid;
+    row-gap: 16px;
+}
+article img{
+    width: 100%;
+}
+article h3{
+
+    font-size: 50px;
+    line-height: 45px;
+    color: #151515;
+}
+article p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+    max-width: 550px;
+}
+article section:nth-child(2) h3{
+    margin-bottom: 21px;
+}
+article section:nth-child(5){
+    height: 293px;
+    background-color: #151515;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+.description h3{
+    font-size: 50px;
+    line-height: 45px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.description p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+}
+
+/* footer */
+footer{
+    height: 336px;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+}
+footer section{
+    display: grid;
+    row-gap: 38px;
+}
+footer h2{
+    width: 112.05px;
+    color: white;
+}
+footer p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.social-media-icons{
+    display: inline-flex;
+}
+.social-media-icons a{
+    margin-right:20px;
 }
