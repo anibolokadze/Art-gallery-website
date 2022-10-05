@@ -180,6 +180,7 @@ footer section{
     height: 336px;
     background-color: #151515;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     padding: 0 32px;
 }
@@ -230,3 +231,10 @@ footer section{
     fill: white;
 }
 
+
+
+/* responsive */
+@media (min-width:768px){
+
+
+}
