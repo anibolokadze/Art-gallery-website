@@ -81,7 +81,7 @@ p{
 
 
 /* index.html main container */
-main{
+.main-index{
     margin:120px 0 120px 0;
 }
 article{
@@ -191,7 +191,7 @@ footer section{
 }
 
 /* footer specifications */
-footer{
+.index-footer{
     height: 336px;
     background-color: #151515;
     display: flex;
@@ -206,11 +206,11 @@ footer{
 }
 
 
-footer h2{
+.index-footer h2{
     width: 112.05px;
     color: white;
 }
-footer p{
+.index-footer p{
     font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
@@ -236,7 +236,7 @@ footer p{
 }
 
 /* hovers for both pages */
-footer a:hover path {
+.index-footer a:hover path {
     fill: #d5966c;
 }
 
@@ -270,11 +270,11 @@ footer a:hover path {
     }
 
 
-    main{
+    .main-index{
         padding: 0 40px;
     }
     /* index.html grid layout */
-    main{
+    .main-index{
         display: grid;
         grid-column-gap: 1.6%;
         grid-row-gap: 0.6875rem;
@@ -309,13 +309,13 @@ footer a:hover path {
 
 
     /* index.html footer */
-    footer section{
+    .index-footer section{
         width: 100%;
         display: flex;
         justify-content: space-between;
         padding: 0 40px;
     }
-    footer section p{
+    .index-footer section p{
         max-width: 281px;
     }
 
@@ -380,7 +380,7 @@ footer a:hover path {
 }
 
 @media (min-width:1440px){
-    main, footer section, .location-btn,
+    .main-index, .index-footer section, .location-btn,
     .map-container section, .location-footer{
         padding: 0 165px;
     }
