@@ -12,7 +12,7 @@ body{
     background: #FCFAF9;
 }
 
-/* general styles */
+/* -------------- general styles ------------- */
 h1,h2, h3{
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 900;
@@ -28,7 +28,9 @@ p{
     padding: 0 32px;
 }
 
-/* index.html header styles */
+
+
+/* header styles */
 .header-text{
     display: grid;
     row-gap: 32px;
@@ -43,7 +45,8 @@ p{
     line-height: 28px;
     max-width: 550px;
 }
-/* html.index background image */
+
+/* background image */
 .bg-mobile{
     width: 100%;
     padding-bottom: 32px;
@@ -56,7 +59,7 @@ p{
 }
 
 
-/* button for both pages */
+/* button */
 .btn{
     display: flex;
 }
@@ -80,7 +83,7 @@ p{
 }
 
 
-/* index.html main container */
+/* main containers */
 main{
     margin:120px 0 120px 0;
 }
@@ -124,65 +127,10 @@ article section:nth-child(5){
 }
 
 
-/* location.html page map image and button positioning */
-.map-mobile{
-    width: 100%;
-    top: 0;
-}
-.map-tablet{
-    display: none;
-}
-.map-desktop{
-    display: none;
-}
-.location-btn{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* location.html adress */
-.map-container{
-    background-color: #151515;
-    
-}
-.map-container section{
-    height: 493px;
-    color: white;
-    padding: 0 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.map-container section h3{
-    font-size: 50px;
-    line-height: 45px;
-    padding-bottom: 48px;
-
-}
-.map-container h4{
-    font-size: 32px;
-    line-height: 32px;
-    color: #D5966C;
-
-}
-.location{
-    display: grid;
-    row-gap: 20px;
-    padding-top: 20px;
-}
-address p{
-    color: #FFFFFF;
-}
 
 
 
-
-
-
-
-
-/* footer for both pages */
+/* footer */
 
 /* general footer style */
 footer section{
@@ -198,14 +146,6 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
-.location-footer{
-    height: 336px;
-    background-color: #D5966C;
-    display: flex;
-    align-items: center;
-}
-
-
 footer h2{
     width: 112.05px;
     color: white;
@@ -214,10 +154,6 @@ footer p{
     font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
-}
-
-.location-footer p{
-    color: #151515;
 }
 
 
@@ -231,25 +167,19 @@ footer p{
 }
 
 
-.location-icons a path{
-    fill: black;
-}
 
-/* hovers for both pages */
+
+/* hovers  */
 footer a:hover path {
     fill: #d5966c;
 }
 
-.location-icons a:hover path{
-    fill: white;
-}
 
 
 
 /* responsive */
 @media (min-width:768px){
     /* background text positioning */
-    /* index.html */
     body{
         position: relative;
     }
@@ -260,7 +190,7 @@ footer a:hover path {
         top: 150px;
     }
 
-    /* index.html background images */
+    /* background image */
     .bg-mobile{
         display: none;
     }
@@ -268,12 +198,11 @@ footer a:hover path {
         display: block;
         width: 50%; 
     }
-
-
     main{
         padding: 0 40px;
     }
-    /* index.html grid layout */
+
+    /* grid layout */
     main{
         display: grid;
         grid-column-gap: 1.6%;
@@ -308,7 +237,7 @@ footer a:hover path {
     }
 
 
-    /* index.html footer */
+    /* footer */
     footer section{
         width: 100%;
         display: flex;
@@ -316,49 +245,6 @@ footer a:hover path {
         padding: 0 40px;
     }
     footer section p{
-        max-width: 281px;
-    }
-
-
-    /* location.html */
-    .map-tablet{
-        display: block;
-        width: 100%;
-    }
-    .map-mobile{
-        display: none;
-    }
-    .map-desktop{
-        display: none;
-    }
-    .location-btn{
-        padding-left: 40px;
-    }
-    .map-container section{
-        padding:0 40px;
-    }
-    .location-btn{
-        padding: 0 40px;
-    }
-
-    /* location.html background  image */
-    .map-container section{
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        height: 548px;
-    }
-    .map-container section h3{
-        padding-right: 68px;
-    }
-
-    /* location.html footer */
-    .location-footer section{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .location-footer p{
         max-width: 281px;
     }
 }
@@ -380,17 +266,7 @@ footer a:hover path {
 }
 
 @media (min-width:1440px){
-    main, footer section, .location-btn,
-    .map-container section, .location-footer{
+    main, footer section{
         padding: 0 165px;
-    }
-
-    /* location.html background images */
-    .map-tablet{
-        display: none;
-    }
-    .map-desktop{
-        display: block;
-        width: 100%;
     }
 }
