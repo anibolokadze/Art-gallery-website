@@ -265,8 +265,65 @@ footer a:hover path {
     }
 }
 
-@media (min-width:1440px){
+@media (min-width:1150px){
+    .bg-tablet{
+        display: none;
+    }
+
+    .main-image-container {
+        display: flex;
+    }
+    header .main-image {
+        width: 540px;
+        height: 799px;
+        background: url(/assets/desktop/image-hero.jpg);
+    }
+
+
+    .black-background {
+        width: 450px;
+        height: 799px;
+        background-color: black;
+      }
+
+    .bg-text h1{
+        width: 514px;
+        display: block;
+    }
+    .header-text h1{
+        width: 450px;
+        margin-left: -34.6rem;
+        margin-top: -8.5rem;
+        z-index: 999;
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 88px;
+        color: #FFFFFF;
+    }
+
+    .main-span-div {
+        position: relative;
+    }
+    
+       .main-span-div::before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 77px;
+        background-color: black;
+        right: 0.1rem;
+        top: 1.1rem;
+    }
+
+      .black-span {
+        color: black;
+    }
+
+
+
     main, footer section{
         padding: 0 165px;
     }
 }
+
+
