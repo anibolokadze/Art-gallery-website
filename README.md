@@ -29,3 +29,6 @@ The designs were created to the following widths:
 - Mobile-first workflow
 
 # What I learned
+This project was particularly difficult for me. The main difficulty was changing the layout of the page on tablet and desktop resolutions. 
+
+In the end, I think I learned a lot about grids from this project. 🚀
