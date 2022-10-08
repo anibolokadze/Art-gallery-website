@@ -7,8 +7,17 @@
     box-sizing: border-box;
     font-style: normal;
 }
+
+:root{
+    --almost-black: #151515;
+    --dark-grey: #444444;
+    --gold: #D5966C;
+    --white: #FFFFFF;
+}
 body{
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 900;
+    
     background: #FCFAF9;
 }
 
@@ -19,6 +28,7 @@ h1,h2, h3{
 }
 p{
     font-weight: 300;
+    font-family: 'Outfit', sans-serif;
     font-size: 18px;
     color: #444444;
 }
@@ -26,28 +36,35 @@ p{
 
 
 /* button */
-.btn{
+.button{
     display: flex;
+    align-items: center;
 }
-.title-btn{
+
+
+.gold-button{
+    background-color: var(--gold);
+    padding: 25px;
+}
+.black-button{
     width: 204px;
-    height: 72px;
-    border: none;
-    background: #151515;
-}
-.title-btn p{
-    color: white;
+    height: 78px;
+    text-decoration: none;
     font-size: 20px;
-    line-height: 24px;
+    background: var(--almost-black);
+    color: #FFFFFF;
+    padding: 25px;
+    letter-spacing: 3.63636px;
 }
 
-.icon-btn{
-    width: 56px;
-    height: 72px;
-    border: none;
-    background: #D5966C;
-}
 
+
+.button:hover .black-button{
+    background-color: var(--gold);
+}
+.button:hover .gold-button{
+    background-color: var(--almost-black);
+}
 
 
 /* map image and button positioning */
