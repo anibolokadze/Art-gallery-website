@@ -17,15 +17,10 @@
 body{
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 900;
-    
     background: #FCFAF9;
 }
 
 /* general styles */
-h1,h2, h3{
-    font-family: 'Big Shoulders Display', cursive;
-    font-weight: 900;
-}
 p{
     font-weight: 300;
     font-family: 'Outfit', sans-serif;
@@ -41,7 +36,6 @@ p{
     align-items: center;
 }
 
-
 .gold-button{
     background-color: var(--gold);
     padding: 25px;
@@ -55,15 +49,6 @@ p{
     color: #FFFFFF;
     padding: 25px;
     letter-spacing: 3.63636px;
-}
-
-
-
-.button:hover .black-button{
-    background-color: var(--gold);
-}
-.button:hover .gold-button{
-    background-color: var(--almost-black);
 }
 
 
@@ -119,12 +104,6 @@ address p{
 }
 
 
-
-
-
-
-
-
 /* footer  */
 /* general footer style */
 footer section{
@@ -146,7 +125,6 @@ footer p{
 }
 
 
-
 /* general icon styles */
 .social-media-icons{
     display: inline-flex;
@@ -160,13 +138,20 @@ footer p{
 }
 
 /* hovers  */
+.button:hover .black-button{
+    background-color: var(--gold);
+}
+.button:hover .gold-button{
+    background-color: var(--almost-black);
+}
+
 .social-media-icons a:hover path{
     fill: white;
 }
 
 
 
-/* responsive */
+/* responsive tablet */
 @media (min-width:768px){
 
     /* map image background */
@@ -217,7 +202,7 @@ footer p{
 }
 
 
-
+/* responsive desktop */
 @media (min-width:1440px){
     header div,
     main section, footer {

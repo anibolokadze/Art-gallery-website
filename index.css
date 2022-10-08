@@ -37,7 +37,6 @@ p{
 /* header styles */
 
 .text{
-    font-weight: 900;
     font-size: 60px;
     line-height: 55px;
     color: var(--almost-black);
@@ -97,15 +96,12 @@ main img{
 
 /* text content */
 .grid-2 h3{
-    font-weight: 900;
     font-size: 50px;
     line-height: 45px;
     color: var(--almost-black)
 }
 .grid-2 p{
     color: var(--dark-grey);
-    font-weight: 300;
-    font-size: 18px;
     line-height: 28px;
     margin-top: 21px;
 }
@@ -196,7 +192,7 @@ footer a:hover path {
 
 
 
-/* responsive */
+/* responsive tablet */
 @media (min-width:768px){
     /* background image and  text positioning */
     .bg-mobile{
@@ -232,10 +228,6 @@ footer a:hover path {
     main{
         padding: 0 40px;
     }
-
-
-
-
 
     /* hide mobile grid layout images */
     .mobile-grid-1, .mobile-grid-3, .mobile-grid-4{
@@ -279,7 +271,6 @@ footer a:hover path {
     .tablet-grid-4{
         padding: 0;
         width: 100%;
-       
     }
     .grid-5{
         grid-column: 3/4;
@@ -304,7 +295,7 @@ footer a:hover path {
 
 
 
-
+/* responsive desktop */
 @media (min-width:1440px){
     /* background */
     .bg-tablet{
@@ -354,9 +345,7 @@ footer a:hover path {
         left: 60%;
     }
 
-
-
-
+    /* hide tablet grid layout images/ show desktop res images*/
     .tablet-grid-1, .tablet-grid-3, .tablet-grid-4{
         display: none;
     }
@@ -369,24 +358,20 @@ footer a:hover path {
 
 
     .grid-2 h3{
-        font-weight: 900;
         font-size: 60px;
         line-height: 60px;  
     }
     .grid-2 p{
-        font-weight: 300;
         font-size: 22px;
         line-height: 32px;
         max-width: 350px;
     }
 
     .grid-5 h3{
-        font-weight: 900;
         font-size: 60px;
         line-height: 60px;
     }
     .grid-5 p{
-        font-weight: 300;
         font-size: 22px;
         line-height: 32px;
     }
