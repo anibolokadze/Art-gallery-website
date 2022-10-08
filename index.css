@@ -212,14 +212,14 @@ footer a:hover path {
     }
     .header-p{
         position: absolute;
-        top: 35%;
+        top: 30%;
         left: 44%;
         max-width: 339px;
         margin-bottom: 48px;
     }
     .button{
         position: absolute;
-        top: 60%;
+        top: 40%;
         left: 44%;
         width: 50%;
     }
